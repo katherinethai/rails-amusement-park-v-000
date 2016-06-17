@@ -1,0 +1,8 @@
+<h3>Sign In</h3>
+<%= form_for(@user, url: signin_path) do |f| %>
+
+  <%= f.label :name, "Select your name" %>
+  <%= f.collection_select(:id, @users, :id, :name, include_blank: true) %>
+
+  <%= f.submit "Sign In" %>
+<% end %>

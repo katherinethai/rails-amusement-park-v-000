@@ -1,3 +1,4 @@
+require 'pry'
 module LoginHelper
 
   def user_signup
